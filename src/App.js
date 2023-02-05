@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import projectsData from "./components/projects.json"
+import Portfolio from "./components/Portfolio";
+
 
 function App() {
+
+  
+  const title = 'Ildiko Dutton'
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  <>
+  
+    <Header title={title}/>
+    <div> 
+    {projectsData.map((name, i) => (
+      <Portfolio 
+      project_name={name.project_name} 
+      project_description={name.project_description} 
+      github_deployed={name.github_deployed} 
+      github_repo={name.github_repo} 
+      screenshot_url={name.screenshot_url}/> 
+      
+    )) }
     </div>
+    <Footer title={title}/>
+    
+  </>
   );
 }
 

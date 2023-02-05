@@ -1,0 +1,11 @@
+header {
+    display: flex;
+    justify-content: space-between
+}
+
+a {
+    color: rgb(249, 7, 128);
+    margin: 1em
+    
+    
+}
