@@ -27,25 +27,21 @@ function App() {
     <>
 
       <Header />
-      <Landing />
-      <About />
-      <div>
-        {projectsData.map((name, i) => (
+      {/* <Landing /> */}
+      {/* <About /> */}
+      
+      {/* {projectsData.map((name, i) => (
           <Portfolio
             project_name={name.project_name}
             project_description={name.project_description}
             github_deployed={name.github_deployed}
             github_repo={name.github_repo}
             screenshot_url={name.screenshot_url} />
-        ))}
-      </div>
-
-      <Contact />
-      <Footer />
-
-
+      ))} */}
       
 
+      {/* <Contact />  */}
+      
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path='/about' element={<About />} />
@@ -53,6 +49,7 @@ function App() {
         <Route path='/contact' element={<Contact />} />
       </Routes>
 
+      <Footer />
     </>
   );
 }

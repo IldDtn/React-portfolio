@@ -1,18 +1,26 @@
+import projectsData from "../../components/projects.json"
 
-function Portfolio (props) {
+
+function Portfolio() {
     return (
-        <div id='container'>
-            
-            <p class='projectDetail'>{props.project_name } </p> 
-            <p class='projectDetail'>{props.project_description}</p>
-            <p class='projectDetail'>{props.github_deployed}</p>
-            <p class='projectDetail'>{props.github_repo}</p>
-            <p class='projectDetail'>{props.screenshot_url}</p>
+        <>
+            {
+                projectsData.map((project, i) => (
+                    <div className="container">
 
-        </div>
+                        <p>{project.project_name} </p>
+                        <p>{project.project_description}</p>
+                        <p>{project.github_deployed}</p>
+                        <p>{project.github_repo}</p>
+                        <p>{project.screenshot_url}</p>
 
-    )
+                    </div>
+                ))
+            }
+        </>)
 
 }
 
 export default Portfolio;
+
+// do I have to import JSON file here and map it here?
