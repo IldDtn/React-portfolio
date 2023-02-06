@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 
 // css imports 
 import css from "./pages/Portfolio/Portfolio.css"
+import css2 from "./pages/Landing/Landing.css"
 
 // data imports
 import projectsData from "./components/projects.json"

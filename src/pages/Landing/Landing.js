@@ -1,11 +1,18 @@
+
+
 function Landing () {
     return (
-        <>
-         <div> Jumbotron/landing page</div>
-         <img src="https://api.lorem.space/image/movie?w=150&h=22"></img>
+        <div id='content'>
+         <p id='image'>image</p>
+         <p id='empty'></p>
+         
+         <p class='brandStatement'> Ildiko Dutton <br/> Fullstack Web Developer <br/> Lorem ipsum dolor sit amet consectetur. Risus tempus odio fermentum suspendisse duis. Quam odio quam tristique montes ut egestas nulla at. Laoreet nibh ac quis vitae. Volutpat etiam et etiam congue morbi ut non</p>
+
+
+         
         
         
-        </>
+        </div>
     );
 }
 
