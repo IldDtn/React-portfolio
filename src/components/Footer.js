@@ -2,10 +2,14 @@ import './Footer.css';
 
 function Footer(props) {
     return (
-      <footer>
-       <p>&copy; 2023 - Ildiko Dutton</p>
-       <h1>{props.title}</h1>
-      </footer>
+      
+
+      <div id="page-container">
+        <div id="content-wrap">
+          
+        </div>
+        <footer id="footer"><p>&copy; 2023 - Ildiko Dutton</p></footer>
+      </div>
     );
   }
 
