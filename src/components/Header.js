@@ -5,7 +5,7 @@ function Header (props) {
     return (
       <header>
         
-        <h3>Logo</h3>
+        <h3>Portfolio</h3>
         <nav>
            <NavLink to="/">Home</NavLink>
            <NavLink to="/about">About</NavLink>

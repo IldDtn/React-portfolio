@@ -4,8 +4,12 @@ header {
 }
 
 a {
-    color: rgb(249, 7, 128);
-    margin: 1em
+    color: black;
+    margin: 1em;
+    text-decoration: none;
+    
     
     
 }
+
+

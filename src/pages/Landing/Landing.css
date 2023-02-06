@@ -24,4 +24,12 @@
 
 .brandStatement {
     grid-area: brandStatement;
+    font-size: large;
 }
+
+#myName {
+ color: rgb(171, 33, 56);
+ font-size: xx-large;
+ font-weight: 300;
+}
+
