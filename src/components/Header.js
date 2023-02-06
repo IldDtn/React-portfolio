@@ -7,10 +7,10 @@ function Header (props) {
         
         <h3>Logo</h3>
         <nav>
-           <a href='#'>Home</a>
-           <a href='#'>About</a>
-           <a href='#'>Portfolio</a>
-           <a href='#'>Contact</a>
+           <NavLink to="/">Home</NavLink>
+           <NavLink to="/about">About</NavLink>
+           <NavLink to="/portfolio">Portfolio</NavLink>
+           <NavLink to="/contact">Contact</NavLink>
         </nav>
       </header>
     );

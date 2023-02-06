@@ -1,25 +1,34 @@
+// component imports
+
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
+// css imports 
+import css from "./pages/Portfolio/Portfolio.css"
+
+// data imports
 import projectsData from "./components/projects.json"
 
-import Portfolio from "./pages/Portfolio";
-import Landing from "./pages/Landing";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
+// page imports
+import Portfolio from "./pages/Portfolio/Portfolio";
+import Landing from "./pages/Landing/Landing";
+import About from "./pages/About/About";
+import Contact from "./pages/Contact/Contact";
 
-import {Routes, Route} from "react-router-dom";
+// react router import 
+import { Routes, Route } from "react-router-dom";
 
 
 
 function App() {
 
-  
   const title = 'Ildiko Dutton'
   return (
     <>
 
-      <Header title={title} />
+      <Header />
+      <Landing />
+      <About />
       <div>
         {projectsData.map((name, i) => (
           <Portfolio
@@ -30,12 +39,15 @@ function App() {
             screenshot_url={name.screenshot_url} />
         ))}
       </div>
-      <Footer title={title} />
-      <Landing />
-      <About />
+
       <Contact />
+      <Footer />
+
+
+      
+
       <Routes>
-        <Route path='/' element={<Landing />} />
+        <Route path="/" element={<Landing />} />
         <Route path='/about' element={<About />} />
         <Route path='/portfolio' element={<Portfolio />} />
         <Route path='/contact' element={<Contact />} />
