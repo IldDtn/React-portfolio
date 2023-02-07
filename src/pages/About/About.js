@@ -5,7 +5,8 @@ function About () {
 
          <p> Linkedin</p>
          <p> Github</p>
-         <p> Download CV</p>
+         
+         <a href="https://docs.google.com/document/d/1pZIPLGsp7_BKg-LcDKsUO7FgG3HvtBg-YsZSTzNA2U4/edit?usp=sharing">Download CV</a>
         
         
         </>
