@@ -1,13 +1,17 @@
 function Contact () {
+  const handleSubmit = (event) => {
+     event.preventDefault();
+     console.log('submitted');
+  };
     return (
         <>
-          <h1> Contact Me</h1>
+          <h1 id='contactMe'> Contact Me</h1>
 
-          <form>
+          <form onSubmit={handleSubmit}>
             <input type='text' placeholder="Enter your name" />
             <input type='text' placeholder="Enter your email address" />
             <textarea placeholder="Enter your message" cols='30' rows='10'> </textarea>
-            <button> Submit </button>
+            <button id='submit'> Submit </button>
           </form>
         
         

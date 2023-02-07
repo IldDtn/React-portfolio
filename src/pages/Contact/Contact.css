@@ -1,5 +1,5 @@
 form {
-    width: 380px;
+    width: 900px;
     display:flex;
     flex-direction: column;
     margin: 0 auto;
@@ -9,4 +9,13 @@ form > * {
     padding: 7px 10px;
     margin-bottom: 7px;
     border: 1px solid #ccc;
+}
+
+#submit {
+    cursor: pointer
+}
+
+#contactMe {
+    margin-bottom: 100px;
+    
 }

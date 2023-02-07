@@ -9,11 +9,13 @@ a {
     color: black;
     margin: 1em;
     text-decoration: none;
-    
-    
-    
+
 }
 
+a.active {
+    text-decoration: underline;
+    
+}
 #portfolioTitle {
     font-family: 'Lobster Two', cursive;
     font-family: 'Roboto', sans-serif;
