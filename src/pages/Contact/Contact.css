@@ -1,0 +1,12 @@
+form {
+    width: 380px;
+    display:flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+form > * {
+    padding: 7px 10px;
+    margin-bottom: 7px;
+    border: 1px solid #ccc;
+}
