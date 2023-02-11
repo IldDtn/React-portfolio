@@ -8,11 +8,11 @@ function Portfolio() {
                 projectsData.map((project, i) => (
                     <div className="container">
 
-                        <p>{project.project_name} </p>
-                        <p>{project.project_description}</p>
-                        <p>{project.github_deployed}</p>
-                        <p>{project.github_repo}</p>
-                        <p>{project.screenshot_url}</p>
+                        <p className='appName'>{project.project_name} </p>
+                        <p className='appDescription'>{project.project_description}</p>
+                        <p className='deployed'>{project.github_deployed}</p>
+                        <p className='repo'>{project.github_repo}</p>
+                        <a href={project.screenshot_url} className='picture'>{project.screenshot_url}</a>
 
                     </div>
                 ))
