@@ -1,44 +1,44 @@
 [
     {
-        "project_name": "First project",
+        "project_name": "Movie App",
         "project_description": "description1",
         "github_deployed": "url1",
-        "github_repo": "url2",
+        "github_repo": "https://github.com/IldDtn/Movie_App",
         "screenshot_url": "screenshot1"
     },
     {
-        "project_name": "Second project",
+        "project_name": "Cooking App",
         "project_description": "description2",
         "github_depolyed": "url3",
         "github_repo": "url4",
         "screenshot_url": "screenshot2"
     },
     {
-        "project_name": "Third project",
+        "project_name": "Daily Planner",
         "project_description": "description3",
         "github_depolyed": "url5",
         "github_repo": "url6",
         "screenshot_url": "screenshot3"
     },
     {
-        "project_name": "Fourth project",
+        "project_name": "Weather App",
         "project_description": "description4",
         "github_depolyed": "url7",
-        "github_repo": "url8",
+        "github_repo": "https://github.com/IldDtn/Wheather_App",
         "screenshot_url": "screenshot4"
     },
     {
-        "project_name": "Fifth project",
+        "project_name": "Quiz",
         "project_description": "description5",
-        "github_depoloyd": "url9",
-        "github_repo": "url10",
+        "github_depoloyd": "https://ilddtn.github.io/Quiz/",
+        "github_repo": "https://github.com/IldDtn/Quiz",
         "screenshot_url": "screenshot5"
     },
     {
-        "project_name": "Sixth project",
+        "project_name": "Password Generator",
         "project_description": "description6",
-        "github_depoloyd": "url11",
-        "github_repo": "url12",
+        "github_depoloyd": "https://ilddtn.github.io/Password_generator/",
+        "github_repo": "https://github.com/IldDtn/Password_generator",
         "screenshot_url": "screenshot6"
     }
 
