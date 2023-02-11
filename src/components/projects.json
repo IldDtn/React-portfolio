@@ -4,14 +4,14 @@
         "project_description": "description1",
         "github_deployed": "url1",
         "github_repo": "https://github.com/IldDtn/Movie_App",
-        "screenshot_url": "screenshot1"
+        "screenshot_url": ""
     },
     {
         "project_name": "Cooking App",
         "project_description": "description2",
         "github_depolyed": "url3",
         "github_repo": "url4",
-        "screenshot_url": "https://picsum.photos/200"
+        "screenshot_url": "https://picsum.photos/50"
     },
     {
         "project_name": "Daily Planner",
@@ -25,21 +25,21 @@
         "project_description": "description4",
         "github_depolyed": "url7",
         "github_repo": "https://github.com/IldDtn/Wheather_App",
-        "screenshot_url": "ild4.jpg"
+        "screenshot_url": "https://picsum.photos/50"
     },
     {
         "project_name": "Quiz",
         "project_description": "description5",
         "github_depoloyd": "https://ilddtn.github.io/Quiz/",
         "github_repo": "https://github.com/IldDtn/Quiz",
-        "screenshot_url": "screenshot5"
+        "screenshot_url": "https://picsum.photos/50"
     },
     {
         "project_name": "Password Generator",
         "project_description": "description6",
         "github_depoloyd": "https://ilddtn.github.io/Password_generator/",
         "github_repo": "https://github.com/IldDtn/Password_generator",
-        "screenshot_url": "screenshot6"
+        "screenshot_url": "https://picsum.photos/50"
     }
 
 ]

@@ -8,6 +8,7 @@
     border-radius: 15px 50px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(20px, auto);
     grid-template-areas: 
     "appName picture"
     "appDescription picture"
@@ -18,6 +19,8 @@
 
 .appName {
     grid-area: appName;
+    font-size: larger;
+    font-weight:800;
 }
 .appDescription {
     grid-area: appDescription;

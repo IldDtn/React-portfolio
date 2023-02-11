@@ -12,7 +12,7 @@ function Portfolio() {
                         <p className='appDescription'>{project.project_description}</p>
                         <p className='deployed'>{project.github_deployed}</p>
                         <p className='repo'>{project.github_repo}</p>
-                        <a href={project.screenshot_url} className='picture'>{project.screenshot_url}</a>
+                        <img src={project.screenshot_url} className='picture'></img>
 
                     </div>
                 ))
