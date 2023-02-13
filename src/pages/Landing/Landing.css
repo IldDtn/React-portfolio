@@ -8,12 +8,14 @@
     "image image empty empty empty"
     "image image brandStatement brandStatement brandStatement";
     
+    
 }
 
-#image {
+#imageMe {
     grid-area: image;
     background-image: url('Ild4.jpg');
     background-repeat: no-repeat;
+    background-size:contain
     
 }
 
