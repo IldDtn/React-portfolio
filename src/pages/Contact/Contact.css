@@ -19,3 +19,8 @@ form > * {
     margin-bottom: 100px;
     
 }
+
+#success {
+    text-align: center;
+    margin-top: 15px;
+}

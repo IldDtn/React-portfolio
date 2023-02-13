@@ -1,6 +1,7 @@
 import { useState } from 'react'
 
 function Contact() {
+  const [success, setSuccess] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -19,7 +20,7 @@ function Contact() {
 
     event.preventDefault();
 
-    const json = JSON.stringify(formData);
+    const data = JSON.stringify(formData);
 
 
     fetch('https://api.web3forms.com/submit', {
@@ -28,23 +29,57 @@ function Contact() {
         'Content-Type': 'application/json',
         'Accept': 'application/json'
       },
-      body: json
+      body: data
     })
       .then(res => res.json())
-      .then(data => console.log(data))
+      .then(data => {
+        setSuccess(true);
+        setFormData({
+          ...formData,
+          name: '',
+          email: '',
+          message: ''
+        })
+
+        setTimeout(() => {
+          setSuccess(false);
+
+        }, 3000)
+      })
       .catch(err => console.log(err));
   };
   return (
     <>
       <h1 id='contactMe'> Contact Me</h1>
-      <p> {formData.email}</p>
+      
 
       <form onSubmit={handleSubmit}>
-        <input name='name' onChange={handleChange} type='text' placeholder="Enter your name" />
-        <input name='email' onChange={handleChange} type='text' placeholder="Enter your email address" />
-        <textarea name='message' onChange={handleChange} placeholder="Enter your message" cols='30' rows='10'> </textarea>
+        <input
+          name='name'
+          value={formData.name}
+          onChange={handleChange}
+          type='text'
+          placeholder="Enter your name"
+        />
+        <input
+          name='email'
+          value={formData.email}
+          onChange={handleChange}
+          type='text'
+          placeholder="Enter your email address"
+        />
+        <textarea
+          name='message'
+          value={formData.message}
+          onChange={handleChange}
+          placeholder="Enter your message"
+          cols='30'
+          rows='10'>
+        </textarea>
         <button id='submit'> Submit </button>
       </form>
+
+     {success && <p id='success'> Form submitted successfully </p> }
 
 
 
