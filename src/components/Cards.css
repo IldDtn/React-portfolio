@@ -65,3 +65,23 @@
     background-color: rgb(66, 192, 243);
     color: white;
 }
+
+.python:hover {
+    background-color: rgb(15, 45, 218);
+    color: white;
+}
+
+.sql:hover {
+    background-color: white;
+    color: white;
+}
+
+.node:hover {
+    background-color: rgb(19, 113, 28);
+    color: white;
+}
+
+.github:hover {
+    background-color: rgb(21, 3, 20);
+    color: white;
+}
