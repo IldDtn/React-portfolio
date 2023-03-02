@@ -47,3 +47,69 @@
     border-radius: 50%;
 }
 
+.containerLanding {
+    max-width: 110rem;
+    padding: 1.5rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-rows: repeat(
+        auto-fit, minmax(20rem, 4fr));
+    grid-gap: 1.5rem;
+
+}
+
+.card {
+    background: #262525;
+    color: #fff;
+    padding: 1.5rem;
+    overflow: hidden;
+    border-radius: 0.8rem;
+}
+
+.card-title-large {
+    font-size: 10rem;
+    letter-spacing: 0.5rem;
+    color: #1d1d1d;
+    transform:translateX(7rem);
+    transition: transform 2.5s;
+}
+
+.card-title-small {
+    margin-bottom: 1rem;
+}
+
+.cardDescription {
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+.card:hover {
+    background-color: #262525;
+}
+
+.card:hover .card-title-large {
+    transform: translateX(-200%);
+    
+}
+
+.card.html:hover {
+    background-color: hwb(23 11% 5%);
+    color: white;
+}
+
+.card.jscript:hover {
+    background-color: hsl(47, 89%, 53%);
+    color: black;
+}
+
+.css:hover {
+    background-color: hwb(214 3% 46%);
+    color: white;
+}
+
+.react:hover {
+    background-color: rgb(66, 192, 243);
+    color: white;
+}
