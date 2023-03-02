@@ -2,12 +2,14 @@
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Cards from "./components/Cards";
 
 // css imports 
 import css from "./pages/Portfolio/Portfolio.css"
 import css2 from "./pages/Landing/Landing.css"
 import css3 from "../src/components/Header.css"
 import css4 from "./pages/Contact/Contact.css"
+import css5 from "../src/components/Cards.css"
 
 // data imports
 import projectsData from "./components/projects.json"
@@ -30,6 +32,7 @@ function App() {
     <>
 
       <Header />
+      
       {/* <Landing /> */}
       {/* <About /> */}
       
@@ -51,7 +54,7 @@ function App() {
         <Route path='/portfolio' element={<Portfolio />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
-
+      <Cards />
       <Footer />
     </>
   );
