@@ -4,9 +4,9 @@
     grid-template-columns: repeat(5, 1fr);
     grid-auto-rows: minmax(250px, auto);
     grid-template-areas: 
-    "image image empty empty empty"
-    "image image empty empty empty"
-    "image image brandStatement brandStatement brandStatement";
+    "image empty empty empty empty"
+    "image brandStatement brandStatement brandStatement brandStatement"
+    "image brandStatement brandStatement brandStatement brandStatement";
     
     
 }
@@ -26,17 +26,24 @@
 
 .brandStatement {
     grid-area: brandStatement;
-    font-size: large;
+    font-size: 2rem;
+    margin-left: 40px;
 }
 
 #myName {
  color: rgb(171, 33, 56);
- font-size: xx-large;
+ font-size: 4rem;
  font-weight: 300;
 
 }
 
 #newTitleIldi {
     font-weight: 700;
+}
+
+#cta {
+    color: rgb(171, 33, 56);
+    padding: 2%;
+    border-radius: 50%;
 }
 

@@ -2,13 +2,22 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: black;
+    padding-bottom: 1rem;
+    clip-path: polygon(
+      0% 0%,
+      100% 0%,
+      100% calc(100% - 1rem),
+      0 100%
+    );
     
 }
 
 a {
-    color: black;
+    color: white;
     margin: 1em;
     text-decoration: none;
+    font-size: 1.5em;
 
 }
 
@@ -22,8 +31,9 @@ a.active {
     font-family: 'Rubik 80s Fade', cursive;
     font-family: 'Sansita Swashed', cursive;
     font-family: 'Tangerine', cursive;
-    color: black;
-    font-size: 2em;
+    color: rgb(186, 152, 158);
+    font-size: 3em;
+    margin-left: 15px;
 }
 
 
